@@ -7,7 +7,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-black/40 backdrop-blur-xl border-t border-white/10">
+    <footer className="relative bg-gradient-to-b from-muted/20 to-background backdrop-blur-xl border-t border-border">
       <div className="container mx-auto px-4 md:px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
@@ -101,7 +101,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-white/10 pt-8">
+        <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
               © {currentYear} Sensory Market Intelligence. All rights reserved.

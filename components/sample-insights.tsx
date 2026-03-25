@@ -40,8 +40,8 @@ export default function SampleInsights() {
     <section id="insights" className="relative py-24 md:py-32 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute -top-40 right-0 w-96 h-96 bg-accent/10 rounded-full mix-blend-screen filter blur-3xl opacity-40"></div>
-        <div className="absolute -bottom-40 left-0 w-96 h-96 bg-primary/10 rounded-full mix-blend-screen filter blur-3xl opacity-40"></div>
+        <div className="absolute -top-40 right-0 w-96 h-96 bg-accent/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+        <div className="absolute -bottom-40 left-0 w-96 h-96 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
@@ -95,7 +95,7 @@ export default function SampleInsights() {
                   <span className="font-medium text-foreground">{item.label}</span>
                   <span className="text-accent font-bold">{item.percentage}%</span>
                 </div>
-                <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+                <div className="w-full h-2 bg-black/5 rounded-full overflow-hidden">
                   <div
                     className={`h-full ${item.color} rounded-full transition-all duration-700`}
                     style={{ width: `${item.percentage}%` }}

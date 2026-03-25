@@ -31,11 +31,11 @@ const useCases = [
 
 export default function UseCases() {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden">
+    <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-muted/20 to-background">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute -top-40 right-0 w-96 h-96 bg-secondary/10 rounded-full mix-blend-screen filter blur-3xl opacity-40"></div>
-        <div className="absolute -bottom-40 left-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-screen filter blur-3xl opacity-40"></div>
+        <div className="absolute -top-40 right-0 w-96 h-96 bg-secondary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
+        <div className="absolute -bottom-40 left-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6">
@@ -59,7 +59,7 @@ export default function UseCases() {
                 <h3 className="text-xl font-bold mb-3 text-foreground">{useCase.title}</h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">{useCase.description}</p>
                 
-                <div className="space-y-2 border-t border-white/10 pt-4">
+                <div className="space-y-2 border-t border-border pt-4">
                   {useCase.metrics.map((metric, idx) => (
                     <div key={idx} className="flex items-center gap-2 text-sm">
                       <span className="text-accent">✓</span>
@@ -70,7 +70,7 @@ export default function UseCases() {
               </div>
 
               {/* Hover effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl -z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl -z-10"></div>
             </div>
           ))}
         </div>
