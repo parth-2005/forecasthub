@@ -3,24 +3,14 @@
 export default function AboutUs() {
   const team = [
     {
-      name: 'Dr. Sarah Chen',
-      role: 'Founder & CEO',
-      bio: 'Ph.D. in Consumer Behavior. 12+ years building market research platforms.',
+      name: 'Lakshya Saraf',
+      role: 'Co-Founder',
+      bio: 'Leads development of our proprietary sensory methodology, runs double-blind pilot studies, and converts raw response signatures into decision-grade FMCG strategy. Works cross-functionally with the full product and infrastructure stack.',
     },
     {
-      name: 'James Rodriguez',
-      role: 'VP of Product',
-      bio: 'Led product teams at major FMCG companies. Expert in consumer insights.',
-    },
-    {
-      name: 'Alex Kumar',
-      role: 'Head of Technology',
-      bio: 'Previously at leading data analytics firm. Specialized in real-time processing.',
-    },
-    {
-      name: 'Maria Okonkwo',
-      role: 'Head of Operations',
-      bio: 'Managed 500+ ambassador network. Expert in data quality and compliance.',
+      name: 'Parth Panot',
+      role: 'Co-Founder',
+      bio: 'Architects platform infrastructure, builds Stickiness Score computation pipelines, and scales our decentralized data network. Collaborates directly on study design, analytics interpretation, and client-facing reporting.',
     },
   ];
 
@@ -52,8 +42,10 @@ export default function AboutUs() {
             Who We Are
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            We're a team of consumer behavior experts, technologists, and industry veterans
-            united by one mission: to make real consumer intelligence accessible to every brand.
+            We are a lean, cross-functional founding team building an unnamed sensory intelligence
+            platform ahead of official brand launch. We engineered a proprietary framework to strip
+            away Brand Equity Bias and compute true sensory Stickiness, validated through a rigorous
+            independent pilot across four market-leading Cream & Onion samples with 44 university participants.
           </p>
         </div>
 
@@ -62,17 +54,15 @@ export default function AboutUs() {
           <div className="card-glass p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
             <p className="text-muted-foreground leading-relaxed">
-              To empower FMCG brands with authentic, real-time consumer insights by connecting
-              them directly with campus communities through our network of dedicated ambassadors.
-              We make consumer intelligence accessible, actionable, and trustworthy.
+              To build the digital infrastructure that connects FMCG R&D directly with unbiased
+              consumer palates at scale.
             </p>
           </div>
           <div className="card-glass p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
             <p className="text-muted-foreground leading-relaxed">
-              A world where every brand decision is informed by real consumer voices. Where
-              market research is faster, cheaper, and more authentic. Where students earn
-              meaningful income while shaping the products they love.
+              To replace slow, subjective market research with pure sensory physics and real-time
+              behavioral data.
             </p>
           </div>
         </div>
@@ -90,15 +80,15 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Leadership Team */}
+        {/* The Founding Team */}
         <div>
-          <h3 className="text-3xl font-bold text-foreground mb-12 text-center">Leadership Team</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <h3 className="text-3xl font-bold text-foreground mb-12 text-center">The Founding Team</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {team.map((member) => (
               <div key={member.name} className="text-center">
                 <div className="mb-4 h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
                   <div className="text-5xl font-bold text-primary/30">
-                    {member.name[0]}
+                    CF
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-foreground mb-1">{member.name}</h4>
@@ -112,16 +102,16 @@ export default function AboutUs() {
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-8 mt-24 pt-24 border-t border-border">
           <div className="text-center">
-            <div className="text-4xl font-bold gradient-text mb-2">500+</div>
-            <p className="text-muted-foreground">Campus Ambassadors</p>
+            <div className="text-4xl font-bold gradient-text mb-2">44</div>
+            <p className="text-muted-foreground">Pilot Participants</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold gradient-text mb-2">25+</div>
-            <p className="text-muted-foreground">Brand Partners</p>
+            <div className="text-4xl font-bold gradient-text mb-2">176</div>
+            <p className="text-muted-foreground">Blind Product Evaluations</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold gradient-text mb-2">3M+</div>
-            <p className="text-muted-foreground">Data Points Collected</p>
+            <div className="text-4xl font-bold gradient-text mb-2">4</div>
+            <p className="text-muted-foreground">Market-Leading Samples Deconstructed</p>
           </div>
         </div>
       </div>

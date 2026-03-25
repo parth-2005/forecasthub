@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 const solutions = [
   {
     title: 'Campus Ambassador Network',
@@ -58,44 +56,44 @@ export default function Solution() {
         </div>
 
         {/* Visual representation of data flow */}
-        <div className="card-glass p-12 rounded-2xl border border-white/20">
+        <div className="card-glass p-12 rounded-2xl border border-white/20 overflow-x-auto">
           <div className="space-y-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center md:min-w-max">
               {/* Campus Ambassadors */}
-              <div className="text-center group">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/40 to-primary/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
-                  👥
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Campus Ambassadors</h4>
-                <p className="text-sm text-muted-foreground">Collect real-world data</p>
+              <div className="text-center group flex-shrink-0">
+          <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/40 to-primary/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
+            👥
+          </div>
+          <h4 className="font-bold text-foreground mb-2">Campus Ambassadors</h4>
+          <p className="text-sm text-muted-foreground">Collect real-world data</p>
               </div>
 
               {/* Arrow */}
-              <div className="hidden md:flex justify-center">
-                <div className="text-4xl text-primary/50">→</div>
+              <div className="hidden md:flex justify-center flex-shrink-0">
+          <div className="text-4xl text-primary/50">→</div>
               </div>
 
               {/* Data Processing */}
-              <div className="text-center group">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent/40 to-accent/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
-                  ⚙️
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Data Processing</h4>
-                <p className="text-sm text-muted-foreground">Validate & clean insights</p>
+              <div className="text-center group flex-shrink-0">
+          <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-accent/40 to-accent/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
+            ⚙️
+          </div>
+          <h4 className="font-bold text-foreground mb-2">Data Processing</h4>
+          <p className="text-sm text-muted-foreground">Validate & clean insights</p>
               </div>
 
               {/* Arrow */}
-              <div className="hidden md:flex justify-center">
-                <div className="text-4xl text-accent/50">→</div>
+              <div className="hidden md:flex justify-center flex-shrink-0">
+          <div className="text-4xl text-accent/50">→</div>
               </div>
 
               {/* Actionable Insights */}
-              <div className="text-center group">
-                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-secondary/40 to-secondary/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
-                  📈
-                </div>
-                <h4 className="font-bold text-foreground mb-2">Actionable Insights</h4>
-                <p className="text-sm text-muted-foreground">Drive product decisions</p>
+              <div className="text-center group flex-shrink-0">
+          <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gradient-to-br from-secondary/40 to-secondary/20 flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300">
+            📈
+          </div>
+          <h4 className="font-bold text-foreground mb-2">Actionable Insights</h4>
+          <p className="text-sm text-muted-foreground">Drive product decisions</p>
               </div>
             </div>
 

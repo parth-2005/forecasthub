@@ -1,35 +1,37 @@
 'use client';
 
-import React from 'react';
-
 const insights = [
   {
-    title: 'Flavor Preference Trends',
-    description: 'Vanilla dominates Gen Z preferences, with berry flavors gaining momentum',
-    stat: '68%',
-    substat: 'prefer vanilla',
-    color: 'from-primary',
+    title: "The 'Stickiness' Disconnect",
+    description:
+      "A high 'Base Taste' does not guarantee loyalty. Our winning sample dominated the market by engineering a polarizing, high-acid textural matrix.",
+    stat: '76',
+    substat: 'Stickiness Score',
+    color: 'bg-primary',
   },
   {
-    title: 'Sustainability Impact',
-    description: '76% would switch brands for sustainable packaging alternatives',
-    stat: '76%',
-    substat: 'eco-conscious buyers',
-    color: 'from-accent',
+    title: 'Flavor-Driven Foot Traffic',
+    description:
+      'True product loyalty overrides convenience. For the winning sensory profile, consumers actively rejected vending machines to seek it out.',
+    stat: '58%',
+    substat: 'Walk-to-Shop Loyalty',
+    color: 'bg-accent',
   },
   {
-    title: 'Price Sensitivity',
-    description: 'Mid-range products ($4-6) show highest conversion across demographics',
-    stat: '42%',
-    substat: 'optimal price range',
-    color: 'from-secondary',
+    title: 'The Manufacturing Penalty',
+    description:
+      'Severe structural breakdowns and high fryer-oil retention (-1 penalty) cause immediate consumer flight-risk, regardless of seasoning.',
+    stat: '-1',
+    substat: 'Oiliness Penalty',
+    color: 'bg-destructive',
   },
   {
-    title: 'Brand Loyalty Drivers',
-    description: 'Taste consistency ranks higher than brand recognition for repeat purchases',
-    stat: '81%',
-    substat: 'taste-driven loyalty',
-    color: 'from-primary',
+    title: 'Palate Fatigue vs. Cleansing',
+    description:
+      'Traditional heavy dairy profiles cause rapid palate fatigue, while precise tangy/citrus notes act as a palate cleanser to drive volume consumption.',
+    stat: '19%',
+    substat: 'Optimal Acid Profile',
+    color: 'bg-secondary',
   },
 ];
 
@@ -45,10 +47,10 @@ export default function SampleInsights() {
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-            Sample <span className="gradient-text">Consumer Insights</span>
+            Sample <span className="text-primary">Consumer Insights</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Real data from our pilot study with 44 diverse students revealing market trends you won't find anywhere else.
+            Real data from our blind pilot study deconstructing the true drivers of consumer loyalty in the Cream & Onion category.
           </p>
         </div>
 
@@ -64,7 +66,7 @@ export default function SampleInsights() {
                     <p className="text-sm text-muted-foreground mb-2">Key Finding</p>
                     <h3 className="text-xl font-bold text-foreground">{insight.title}</h3>
                   </div>
-                  <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${insight.color} to-transparent flex flex-col items-center justify-center text-white`}>
+                  <div className={`w-16 h-16 rounded-xl ${insight.color} flex flex-col items-center justify-center text-white`}>
                     <span className="text-2xl font-bold">{insight.stat}</span>
                   </div>
                 </div>
@@ -73,21 +75,20 @@ export default function SampleInsights() {
               </div>
 
               {/* Hover background */}
-              <div className={`absolute inset-0 bg-gradient-to-br ${insight.color} to-transparent opacity-0 group-hover:opacity-5 transition-opacity duration-300 -z-10 rounded-2xl`}></div>
+              <div className={`absolute inset-0 ${insight.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300 -z-10 rounded-2xl`}></div>
             </div>
           ))}
         </div>
 
         {/* Chart visualization */}
         <div className="card-glass p-8 rounded-2xl">
-          <h3 className="text-2xl font-bold mb-8 text-foreground">Product Preference Breakdown</h3>
+          <h3 className="text-2xl font-bold mb-8 text-foreground">Channel Substitution Risk (Premium Profile)</h3>
           
           <div className="space-y-6">
             {[
-              { label: 'Beverages', percentage: 87, color: 'from-primary' },
-              { label: 'Snacks', percentage: 72, color: 'from-accent' },
-              { label: 'Confectionery', percentage: 65, color: 'from-secondary' },
-              { label: 'Dairy Products', percentage: 58, color: 'from-primary' },
+              { label: 'Walk to a nearby shop', percentage: 58, color: 'bg-primary' },
+              { label: 'Skip buying altogether', percentage: 33, color: 'bg-secondary' },
+              { label: 'Settle for vending machine competitor', percentage: 8, color: 'bg-destructive' },
             ].map((item, index) => (
               <div key={index}>
                 <div className="flex justify-between mb-2">
@@ -96,7 +97,7 @@ export default function SampleInsights() {
                 </div>
                 <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
                   <div
-                    className={`h-full bg-gradient-to-r ${item.color} to-transparent rounded-full transition-all duration-700`}
+                    className={`h-full ${item.color} rounded-full transition-all duration-700`}
                     style={{ width: `${item.percentage}%` }}
                   ></div>
                 </div>

@@ -7,7 +7,7 @@ export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 border-b border-white/10 bg-black/40 backdrop-blur-xl">
+    <nav className="fixed top-0 w-full z-50 border-b border-border bg-white/80 backdrop-blur-xl">
       <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="font-bold text-xl gradient-text">
@@ -47,7 +47,7 @@ export default function Nav() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-black/80 backdrop-blur-xl border-t border-white/10">
+        <div className="md:hidden bg-white/90 backdrop-blur-xl border-t border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
             <Link
               href="#insights"
