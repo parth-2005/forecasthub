@@ -16,7 +16,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
-      <SampleInsights />
+      {/* <SampleInsights /> */}
       <SocialProof />
       <AboutUs />
       <UseCases />

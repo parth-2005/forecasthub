@@ -12,7 +12,7 @@ const solutions = [
     color: 'from-accent',
   },
   {
-    title: 'Cleaned & Processed Insights',
+    title: 'Robust Proprietary Analytics Algorithm',
     description: 'Raw data automatically validated, cleaned, and transformed into actionable insights',
     color: 'from-secondary',
   },
@@ -44,9 +44,6 @@ export default function Solution() {
               className={`group relative card-glass p-8 overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1`}
             >
               <div className="relative z-10">
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${solution.color} to-transparent mb-4 flex items-center justify-center`}>
-                  <span className="text-xl font-bold">{'①②③'[index]}</span>
-                </div>
                 <h3 className="text-xl font-bold mb-3 text-foreground">{solution.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{solution.description}</p>
               </div>

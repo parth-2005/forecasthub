@@ -36,12 +36,12 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="#demo" className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 text-center">
+              <Link href="mailto:pjpanot260305@gmail.com" className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 text-center">
                 Request Demo
               </Link>
-              <Link href="#insights" className="px-8 py-3 glass-effect text-foreground rounded-full font-medium hover:bg-white/10 transition-all duration-300 text-center">
+              {/* <Link href="#insights" className="px-8 py-3 glass-effect text-foreground rounded-full font-medium hover:bg-white/10 transition-all duration-300 text-center">
                 View Sample Insights →
-              </Link>
+              </Link> */}
             </div>
 
             <div className="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">

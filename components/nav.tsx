@@ -16,20 +16,12 @@ export default function Nav() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center">
-          <Link href="#insights" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Insights
-          </Link>
-          <Link href="#demo" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Demo
-          </Link>
-          <Link href="#" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
-            Pricing
-          </Link>
           <Link
-            href="#"
+          // link to pjpanot260305@gmail.com
+          href="mailto:pjpanot260305@gmail.com?subject=Demo%20Request%20from%20Leniq"
             className="px-6 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300"
           >
-            Get Started
+            Get Demo
           </Link>
         </div>
 

@@ -28,7 +28,6 @@ const useCases = [
     metrics: ['Demographic insights', 'Behavioral patterns'],
   },
 ];
-
 export default function UseCases() {
   return (
     <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-b from-muted/20 to-background">
@@ -37,7 +36,6 @@ export default function UseCases() {
         <div className="absolute -top-40 right-0 w-96 h-96 bg-secondary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
         <div className="absolute -bottom-40 left-1/4 w-96 h-96 bg-primary/10 rounded-full mix-blend-multiply filter blur-3xl opacity-40"></div>
       </div>
-
       <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
