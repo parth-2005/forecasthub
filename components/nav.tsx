@@ -11,17 +11,23 @@ export default function Nav() {
       <div className="container mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="font-bold text-xl gradient-text">
-          Sensory Intelligence
+          LOGIQ
         </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-8 items-center">
           <Link
+            href="/dashboard"
+            className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Pilot Report
+          </Link>
+          <Link
           // link to pjpanot260305@gmail.com
-          href="mailto:pjpanot260305@gmail.com?subject=Demo%20Request%20from%20Leniq"
+          href="mailto:pjpanot260305@gmail.com?subject=Study%20Request%20from%20LOGIQ"
             className="px-6 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300"
           >
-            Get Demo
+            Request a study
           </Link>
         </div>
 
@@ -42,31 +48,17 @@ export default function Nav() {
         <div className="md:hidden bg-white/90 backdrop-blur-xl border-t border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
             <Link
-              href="#insights"
+              href="/dashboard"
               className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setIsOpen(false)}
             >
-              Insights
+              Pilot Report
             </Link>
             <Link
-              href="#demo"
-              className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Demo
-            </Link>
-            <Link
-              href="#"
-              className="block text-sm text-muted-foreground hover:text-foreground transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Pricing
-            </Link>
-            <Link
-              href="#"
+              href="mailto:pjpanot260305@gmail.com?subject=Study%20Request%20from%20LOGIQ"
               className="block px-6 py-2 bg-primary text-primary-foreground rounded-full text-sm font-medium hover:bg-primary/90 transition-all duration-300 text-center"
             >
-              Get Started
+              Request a study
             </Link>
           </div>
         </div>

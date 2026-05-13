@@ -17,48 +17,44 @@ export default function CTA() {
         <div className="max-w-3xl mx-auto text-center">
           <div className="card-glass p-12 md:p-16 rounded-3xl border border-white/20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
-              Ready for <span className="gradient-text">Custom Insights</span> for Your Brand?
+              Ready for your category's <span className="gradient-text">Stickiness Score?</span>
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              Join leading FMCG brands unlocking real consumer intelligence. Get started with a consultation call and custom proposal.
+              LOGIQ builds custom sensory studies for FMCG brands across any snack, beverage, or packaged food category. Pilot-validated methodology. Campus-verified data.
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="#"
+                href="mailto:pjpanot260305@gmail.com?subject=Study%20Request%20for%20LOGIQ"
                 className="px-8 py-4 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 text-center hover:scale-105"
               >
-                Request Demo Today
+                Request a custom study
               </Link>
               <Link
-                href="#"
+                href="/dashboard"
                 className="px-8 py-4 glass-effect text-foreground rounded-full font-medium hover:bg-white/15 transition-all duration-300 text-center"
               >
-                View Pricing →
+                View pilot report →
               </Link>
             </div>
-
-            <p className="text-sm text-muted-foreground">
-              No credit card required. Free consultation with our market intelligence specialists.
-            </p>
           </div>
 
           {/* Trust signals */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="text-3xl mb-2">🔒</div>
-              <h4 className="font-bold text-foreground mb-2">Data Privacy</h4>
-              <p className="text-sm text-muted-foreground">GDPR compliant. Student privacy is our priority.</p>
+              <div className="text-3xl mb-2">🔬</div>
+              <h4 className="font-bold text-foreground mb-2">Methodology</h4>
+              <p className="text-sm text-muted-foreground">Double-blind protocol, GPS-verified sessions, honesty-weighted scoring</p>
             </div>
             <div>
               <div className="text-3xl mb-2">⚡</div>
-              <h4 className="font-bold text-foreground mb-2">Fast Turnaround</h4>
-              <p className="text-sm text-muted-foreground">Get insights in weeks, not months.</p>
+              <h4 className="font-bold text-foreground mb-2">Turnaround</h4>
+              <p className="text-sm text-muted-foreground">Pilot study delivered in 3–4 weeks from brief to report</p>
             </div>
             <div>
-              <div className="text-3xl mb-2">📊</div>
-              <h4 className="font-bold text-foreground mb-2">High Quality</h4>
-              <p className="text-sm text-muted-foreground">99% data accuracy. Real people. Real insights.</p>
+              <div className="text-3xl mb-2">📋</div>
+              <h4 className="font-bold text-foreground mb-2">Auditability</h4>
+              <p className="text-sm text-muted-foreground">Raw data, session logs, and scoring algorithm available to clients</p>
             </div>
           </div>
         </div>

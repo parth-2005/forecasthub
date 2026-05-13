@@ -5,11 +5,13 @@ export default function AboutUs() {
     {
       name: 'Lakshya Saraf',
       role: 'Co-Founder',
+      initials: 'LS',
       bio: 'Leads development of our proprietary sensory methodology, runs double-blind pilot studies, and converts raw response signatures into decision-grade FMCG strategy. Works cross-functionally with the full product and infrastructure stack.',
     },
     {
       name: 'Parth Panot',
       role: 'Co-Founder',
+      initials: 'PP',
       bio: 'Architects platform infrastructure, builds Stickiness Score computation pipelines, and scales our decentralized data network. Collaborates directly on study design, analytics interpretation, and client-facing reporting.',
     },
   ];
@@ -42,9 +44,9 @@ export default function AboutUs() {
             Who We Are
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            We are a lean, cross-functional founding team building an unnamed sensory intelligence
-            platform ahead of official brand launch. We engineered a proprietary framework to strip
-            away Brand Equity Bias and compute true sensory Stickiness, validated through a rigorous
+            We are a lean, cross-functional founding team building 
+            <span className="text-foreground font-semibold"> LOGIQ </span> 
+            to compute true sensory Stickiness, validated through a rigorous
             independent pilot across four market-leading Cream & Onion samples with 44 university participants.
           </p>
         </div>
@@ -88,7 +90,7 @@ export default function AboutUs() {
               <div key={member.name} className="text-center">
                 <div className="mb-4 h-48 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
                   <div className="text-5xl font-bold text-primary/30">
-                    CF
+                    {member.initials}
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold text-foreground mb-1">{member.name}</h4>

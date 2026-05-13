@@ -4,28 +4,28 @@ import React from 'react';
 
 const useCases = [
   {
-    title: 'Product Testing & Validation',
-    description: 'Test new products with real consumers before market launch. Gather authentic feedback on taste, packaging, and positioning.',
+    title: 'Pre-launch variant validation',
+    description: 'Before locking an SKU for distribution, run a blind study across 3–5 variants. Identify which physical profile generates the highest Stickiness Score — not the highest stated preference.',
     icon: '🧪',
-    metrics: ['Reduce launch risk by 60%', 'Validate PMF in weeks'],
+    metrics: ['Catch manufacturing defects before launch', 'Separate taste preference from loyalty intent'],
   },
   {
-    title: 'Flavor Preference Analysis',
-    description: 'Identify winning flavor profiles, understand taste preferences by demographic, and predict seasonal trends.',
+    title: 'Competitive category benchmarking',
+    description: 'Understand where your SKU sits in its category without brand bias. Map your product\'s texture, flavour, and oiliness against competitors on a like-for-like physical basis.',
     icon: '🍬',
-    metrics: ['Discover trends early', 'Segment by generation'],
+    metrics: ['Know your true sensory position', 'Find the loyalty gap vs category leader'],
   },
   {
-    title: 'Brand Perception Tracking',
-    description: 'Monitor brand sentiment in real-time, track competitor positioning, and identify messaging opportunities.',
+    title: 'Price elasticity measurement',
+    description: '25% price premium sensitivity tested per respondent per sample. How many of your current buyers switch at that price point? The answer varies dramatically by physical product quality.',
     icon: '📢',
-    metrics: ['Real-time sentiment', 'Competitive intelligence'],
+    metrics: ['Per-SKU price sensitivity score', 'Channel substitution risk quantified'],
   },
   {
-    title: 'Market Segmentation',
-    description: 'Understand generational differences, identify niche segments, and personalize products for your target audience.',
+    title: 'R&D formulation feedback',
+    description: 'Feed new formulations into the sensory pipeline before the production decision is made. Texture, mouthfeel, oiliness — all scored algorithmically before you commit to a manufacturing run.',
     icon: '🎯',
-    metrics: ['Demographic insights', 'Behavioral patterns'],
+    metrics: ['Algorithmic defect detection', 'Formulation vs competitor benchmarked'],
   },
 ];
 export default function UseCases() {

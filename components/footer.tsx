@@ -12,9 +12,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg text-foreground">Sensory Intelligence</h3>
+            <h3 className="font-bold text-lg text-foreground">LOGIQ</h3>
             <p className="text-sm text-muted-foreground">
-              Real consumer insights from real environments. Empowering FMCG brands with authentic market data.
+              Blind sensory science. Real loyalty data.
             </p>
           </div>
 
@@ -104,19 +104,8 @@ export default function Footer() {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © {currentYear} Sensory Market Intelligence. All rights reserved.
+              © 2026 LOGIQ. Sensory market intelligence for FMCG.
             </p>
-            <div className="flex gap-6">
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <span className="text-xl">𝕏</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <span className="text-xl">f</span>
-              </Link>
-              <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <span className="text-xl">in</span>
-              </Link>
-            </div>
           </div>
         </div>
       </div>

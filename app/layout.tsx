@@ -8,8 +8,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Sensory Market Intelligence Platform | Real Consumer Insights',
-  description: 'Collect real-world consumer data through campus ambassadors and get actionable insights for FMCG brands. Real-time data processing and behavioral analytics.',
+  title: 'LOGIQ — Sensory Market Intelligence for FMCG',
+  description: 'LOGIQ runs double-blind campus studies that separate base taste from consumer loyalty. Pilot-validated. Built for FMCG R&D teams.',
   viewport: {
     width: 'device-width',
     initialScale: 1,

@@ -2,6 +2,18 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
+
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
+const stickinessData = [
+  { name: 'Sample 3 (Cult Classic)', score: 76.56, color: 'bg-primary' },
+  { name: 'Sample 1 (Neutral Buy)', score: 61.67, color: 'bg-muted-foreground/30' },
+  { name: 'Sample 2 (Safe Habit)', score: 60.58, color: 'bg-muted-foreground/30' },
+  { name: 'Sample 4 (Market Flop)', score: 42.19, color: 'bg-muted-foreground/30' },
+];
 
 export default function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,99 +23,92 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Animated background blobs */}
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full mix-blend-screen filter blur-3xl animate-blob-shift opacity-50"></div>
-        <div className="absolute top-40 right-10 w-72 h-72 bg-accent/20 rounded-full mix-blend-screen filter blur-3xl animate-blob-shift opacity-50" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 left-1/3 w-72 h-72 bg-secondary/20 rounded-full mix-blend-screen filter blur-3xl animate-blob-shift opacity-50" style={{ animationDelay: '4s' }}></div>
-      </div>
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 bg-background">
       <div className="container mx-auto px-4 md:px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <div className={`space-y-8 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-            <div className="space-y-4">
-              <div className="inline-block px-4 py-2 glass-effect text-sm font-medium text-accent">
-                ✨ Real-World Market Intelligence
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight text-balance">
-                Real Consumer Insights from <span className="gradient-text">Real Environments</span>
+            <div className="space-y-6">
+              <h1 className="text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight text-balance">
+                Blind sensory science.<br />
+                Real loyalty data.<br />
+                <span className="gradient-text">Zero brand noise.</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-                Stop guessing. Start knowing. Collect authentic behavioral data through our campus ambassador network and transform market research from slow & biased to fast & actionable.
+                LOGIQ runs double-blind, campus-based sensory studies for Indian FMCG brands. We quantify what surveys cannot — the physical attributes that actually drive repeat purchase, not what consumers say they prefer.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link href="mailto:pjpanot260305@gmail.com" className="px-8 py-3 bg-primary text-primary-foreground rounded-full font-medium hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/50 text-center">
-                Request Demo
-              </Link>
-              {/* <Link href="#insights" className="px-8 py-3 glass-effect text-foreground rounded-full font-medium hover:bg-white/10 transition-all duration-300 text-center">
-                View Sample Insights →
-              </Link> */}
+              <Button asChild size="lg" className="px-8 h-14 text-base rounded-full">
+                <Link href="mailto:pjpanot260305@gmail.com?subject=Study%20Request%20from%20LOGIQ">
+                  Request a custom study
+                  <ArrowRight className="ml-2 size-4" />
+                </Link>
+              </Button>
+              <Button asChild variant="outline" size="lg" className="px-8 h-14 text-base rounded-full bg-background/70">
+                <Link href="/dashboard">View pilot report →</Link>
+              </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">
-              <div>
-                <div className="text-2xl font-bold gradient-text">44+</div>
-                <p className="text-sm text-muted-foreground">Universities</p>
+            <div className="space-y-4">
+              <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
+                <div>
+                  <div className="text-3xl font-bold text-foreground">44</div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground mt-1">verified respondents</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-foreground">176</div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground mt-1">blind evaluations</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-bold text-foreground">4</div>
+                  <p className="text-xs uppercase tracking-wider text-muted-foreground mt-1">competing SKUs tested</p>
+                </div>
               </div>
-              <div>
-                <div className="text-2xl font-bold gradient-text">2,000+</div>
-                <p className="text-sm text-muted-foreground">Ambassadors</p>
-              </div>
-              <div>
-                <div className="text-2xl font-bold gradient-text">Real-time</div>
-                <p className="text-sm text-muted-foreground">Data Flow</p>
-              </div>
+              <p className="text-[11px] text-muted-foreground/60 italic">
+                Pilot study · PDPU Raysan campus · March 2026
+              </p>
             </div>
           </div>
 
-          {/* Right Visual - Data Dashboard Preview */}
           <div className={`relative transition-all duration-1000 delay-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
-            <div className="card-glass p-8 space-y-6 animate-float">
-              {/* Dashboard Header */}
-              <div className="space-y-2">
-                <h3 className="text-xl font-bold text-foreground">Market Analysis Dashboard</h3>
-                <p className="text-sm text-muted-foreground">Real-time consumer sentiment & preferences</p>
-              </div>
-
-              {/* Chart Preview */}
-              <div className="space-y-4">
-                <div className="h-40 bg-gradient-to-b from-primary/20 to-transparent rounded-lg border border-white/10 flex items-end gap-2 p-4">
-                  <div className="flex-1 h-20 bg-primary/40 rounded-t" style={{ height: '65%' }}></div>
-                  <div className="flex-1 h-20 bg-accent/40 rounded-t" style={{ height: '45%' }}></div>
-                  <div className="flex-1 h-20 bg-secondary/40 rounded-t" style={{ height: '75%' }}></div>
-                  <div className="flex-1 h-20 bg-primary/40 rounded-t" style={{ height: '55%' }}></div>
+            <Card className="card-glass border-white/20 bg-background/70 backdrop-blur-xl p-2">
+              <CardHeader className="pb-4">
+                <div className="flex justify-between items-center mb-2">
+                  <Badge variant="outline" className="uppercase tracking-[0.18em] text-[10px] font-medium py-0.5">
+                    Brands anonymised
+                  </Badge>
                 </div>
-
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white/5 rounded-lg p-3 border border-white/10">
-                    <p className="text-xs text-muted-foreground">Preference Rate</p>
-                    <p className="text-lg font-bold gradient-text">87%</p>
-                  </div>
-                  <div className="bg-white/5 rounded-lg p-3 border border-white/10">
-                    <p className="text-xs text-muted-foreground">Response Time</p>
-                    <p className="text-lg font-bold gradient-text">24h</p>
-                  </div>
-                  <div className="bg-white/5 rounded-lg p-3 border border-white/10">
-                    <p className="text-xs text-muted-foreground">Data Quality</p>
-                    <p className="text-lg font-bold gradient-text">99%</p>
-                  </div>
-                  <div className="bg-white/5 rounded-lg p-3 border border-white/10">
-                    <p className="text-xs text-muted-foreground">Accuracy</p>
-                    <p className="text-lg font-bold gradient-text">95%</p>
-                  </div>
+                <CardTitle className="text-lg font-bold">Stickiness Score — Pilot output sample</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="space-y-5">
+                  {stickinessData.map((item) => (
+                    <div key={item.name} className="space-y-2">
+                      <div className="flex justify-between text-sm font-medium">
+                        <span className="text-muted-foreground">{item.name}</span>
+                        <span className="font-mono">{item.score.toFixed(2)}</span>
+                      </div>
+                      <div className="h-4 w-full bg-muted/30 rounded-full overflow-hidden flex">
+                        <div 
+                          className={`h-full ${item.color} transition-all duration-1000 delay-500`} 
+                          style={{ width: isVisible ? `${item.score}%` : '0%' }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
                 </div>
-              </div>
-
-              {/* Glow accent */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/10 to-accent/0 rounded-2xl -z-10 blur-2xl opacity-50"></div>
-            </div>
+                <div className="pt-4 border-t border-border/50">
+                  <p className="text-[11px] text-muted-foreground leading-relaxed">
+                    <span className="font-semibold text-primary">Note:</span> Stickiness ≠ base taste. Sample 3 had only 48.18 base taste score yet leads on loyalty.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
     </section>
   );
 }
+
